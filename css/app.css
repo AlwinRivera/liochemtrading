@@ -1,0 +1,316 @@
+body {
+    color: #222222;
+}
+
+/* UTILITIES */
+.bg-primary {
+    background-color: #115b7b !important;
+}
+
+.btn {
+    padding: 17px 41px !important;
+    font-size: 14px;
+}
+
+/* TOP FOLD */
+h1 {
+    font-size: 44px;
+    font-weight: 100;
+    line-height: 58px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 40px;
+}
+
+/* SERVICES */
+.services {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.services h3 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.services .scrolling-wrapper {
+    overflow-x: auto;
+}
+
+/* ABOUT */
+.about {
+    font-size: 25px;
+    line-height: 48px;
+}
+
+.about h3 {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 48px;
+}
+
+/* PRODUCTS */
+.products {
+    font-size: 14px !important;
+}
+
+.products h3 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.products h4 {
+    font-size: 18px !important;
+    font-weight: 600;
+}
+
+/* CONTACT */
+.contact {
+    font-size: 16px !important;
+}
+
+.contact h3 {
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.contact ul li {
+    font-size: 18px !important;
+    font-weight: 300;
+}
+
+.contact .form-control {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px solid hsla(0, 0%, 63.1%, .5);
+}
+
+/* LINKS */
+.links {
+    font-size: 16px;
+}
+
+.links .nav-link {
+    color: #222222;
+}
+
+
+.links h5 {
+    font-size: 18px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #f7f7f7;
+}
+
+footer .nav-link {
+    color: #222;
+}
+
+@media only screen and (max-width: 600px) {
+
+    /* NAV */
+    .navbar-nav .nav-link {
+        font-size: 24px;
+    }
+
+    .vh-sm-100 {
+        height: 100vh;
+    }
+
+    .navbar-nav .btn {
+        font-size: 15px;
+        margin-top: 110px;
+        padding: 1.5rem 1rem;
+    }
+
+    .btn-sm-block {
+        display: block;
+        width: 100%;
+    }
+
+    .p-sm-custom-5 {
+        padding: 3rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* UTILITIES */
+    .btn {
+        padding: 17px 43px !important;
+    }
+
+    /* TOP FOLD */
+    h1 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    h2 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    /* SERVICES */
+    .services {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .services h3 {
+        font-size: 28px;
+        font-weight: 300;
+    }
+
+    /* ABOUT */
+    .about {
+        font-size: 19px;
+        font-weight: 100;
+        line-height: 34px;
+    }
+
+    .about h3 {
+        font-size: 28px;
+        font-weight: 100;
+    }
+
+    /* PRODUCTS */
+    .products {
+        font-size: 14px !important;
+    }
+
+    .products h3 {
+        font-size: 28px;
+        font-weight: 300;
+    }
+
+    .products h4 {
+        font-size: 18px !important;
+        font-weight: 600;
+    }
+
+    /* CONTACT */
+    .contact {
+        font-size: 16px !important;
+    }
+
+    .contact h3 {
+        font-size: 62px;
+        font-weight: 200;
+    }
+
+    .contact ul li {
+        font-size: 18px !important;
+        font-weight: 300;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    /* TOP FOLD */
+    h1 {
+        font-size: 46px;
+    }
+
+    /* SERVICES */
+    .services h3 {
+        font-size: 37px;
+    }
+
+    /* ABOUT */
+    .about {
+        font-size: 26px;
+        line-height: 46px;
+    }
+
+    .about h3 {
+        font-size: 37px;
+    }
+
+    /* PRODUCTS */
+    .products {
+        font-size: 14px !important;
+    }
+
+    .products h3 {
+        font-size: 37px;
+        font-weight: 300;
+    }
+
+    .products h4 {
+        font-size: 18px !important;
+        font-weight: 600;
+    }
+
+    /* CONTACT */
+    .contact {
+        font-size: 16px !important;
+    }
+
+    .contact h3 {
+        font-size: 62px;
+        font-weight: 200;
+    }
+
+    .contact ul li {
+        font-size: 22px !important;
+        font-weight: 300;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    /* UTILITIES */
+    .btn {
+        padding: 17px 43px !important;
+    }
+
+    /* TOP FOLD */
+    h1 {
+        font-size: 52px;
+        line-height: 62px;
+    }
+
+    h2 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    /* SERVICES */
+    .services h3 {
+        font-size: 52px;
+    }
+
+    /* ABOUT */
+    .about {
+        font-size: 33px;
+        line-height: 57px;
+    }
+
+    .about h3 {
+        font-size: 52px;
+    }
+
+    /* PRODUCTS */
+    .products {
+        font-size: 14px !important;
+    }
+
+    .products h3 {
+        font-size: 52px;
+        font-weight: 300;
+    }
+
+    .products h4 {
+        font-size: 18px !important;
+        font-weight: 600;
+    }
+}
