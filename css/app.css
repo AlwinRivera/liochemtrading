@@ -28,6 +28,7 @@ body {
     transition: color .3s;
 }
 
+/* TOP FOLD */
 h1 {
     font-size: 44px;
     font-weight: 100;
@@ -149,7 +150,7 @@ footer .nav-link {
 
     .navbar-nav .btn {
         font-size: 15px;
-        margin-top: 110px;
+        margin-top: 80px;
         padding: 1.5rem 1rem;
     }
 
@@ -178,7 +179,7 @@ footer .nav-link {
 
     /* TOP FOLD */
     main.hero {
-        background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../images/hero-img.jpg");
+        background-image: url("../images/hero-img.jpg");
         background-position: top center;
         background-repeat: no-repeat;
         background-size: cover;
