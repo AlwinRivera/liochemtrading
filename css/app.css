@@ -12,7 +12,7 @@ body {
 }
 
 .btn {
-    padding: 16px 32px !important;
+    padding: 10px 22px !important;
     font-size: 14px;
 }
 
@@ -67,8 +67,8 @@ h3 {
 
 /* ABOUT */
 .about {
-    font-size: 25px;
-    line-height: 48px;
+    font-size: 18px;
+    line-height: 26px;
     background-color: #F2F2F2;
 }
 
@@ -90,6 +90,17 @@ h3 {
     font-weight: 600;
 }
 
+.products .card-footer {
+    color: #222;
+    transition: all .3s;
+    background-color: #fff;
+}
+
+.products .card:hover .card-footer {
+    background-color: #15749d;
+    color: #fff;
+}
+
 /* CONTACT */
 .contact {
     font-size: 16px !important;
@@ -102,6 +113,20 @@ h3 {
 .contact ul li {
     font-size: 18px !important;
     font-weight: 300;
+}
+
+.contact ul .fa-li {
+    transition: color .3s;
+}
+
+.contact ul li:hover .fa-li {
+    color: #15749d;
+}
+
+/* GOOGLE MAP */
+#map {
+    height: 400px;
+    width: 100%;
 }
 
 /* LINKS */
@@ -206,9 +231,7 @@ footer .nav-link {
 
     /* ABOUT */
     .about {
-        font-size: 20px;
         font-weight: 100;
-        line-height: 35px;
         background-image: url("../images/hero-img-about.jpg");
         background-position: top center;
         background-repeat: no-repeat;
@@ -261,27 +284,12 @@ footer .nav-link {
 
     /* HEADINGS */
     h3 {
-        font-size: 28px;
+        font-size: 37px;
     }
 
     /* TOP FOLD */
     h1 {
         font-size: 46px;
-    }
-
-    /* SERVICES */
-    .services h3 {
-        font-size: 37px;
-    }
-
-    /* ABOUT */
-    .about {
-        font-size: 26px;
-        line-height: 46px;
-    }
-
-    .about h3 {
-        font-size: 37px;
     }
 
     /* PRODUCTS */
@@ -290,7 +298,6 @@ footer .nav-link {
     }
 
     .products h3 {
-        font-size: 37px;
         font-weight: 300;
     }
 
@@ -305,7 +312,6 @@ footer .nav-link {
     }
 
     .contact h3 {
-        font-size: 62px;
         font-weight: 200;
     }
 
@@ -316,6 +322,11 @@ footer .nav-link {
 }
 
 @media only screen and (min-width: 1200px) {
+
+    /* HEADINGS */
+    h3 {
+        font-size: 52px;
+    }
 
     /* TOP FOLD */
     h1 {
@@ -328,19 +339,10 @@ footer .nav-link {
         line-height: 30px;
     }
 
-    /* SERVICES */
-    .services h3 {
-        font-size: 52px;
-    }
-
     /* ABOUT */
     .about {
-        font-size: 33px;
-        line-height: 57px;
-    }
-
-    .about h3 {
-        font-size: 52px;
+        font-size: 24px;
+        line-height: 30px;
     }
 
     /* PRODUCTS */
@@ -349,7 +351,6 @@ footer .nav-link {
     }
 
     .products h3 {
-        font-size: 52px;
         font-weight: 300;
     }
 
