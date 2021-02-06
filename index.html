@@ -17,6 +17,16 @@
 </head>
 
 <body>
+    <!-- LOADING SCREEN -->
+    <section class="container-fluid fixed-top bg-white" id="loading-screen">
+        <div class="row vh-100 align-items-center justify-content-center">
+            <div class="col-12">
+                <img src="images/logo.png" alt="lio chem trading logo" width="200" class="img-fluid d-block mx-auto">
+            </div>
+        </div>
+    </section>
+    <!--/ LOADING SCREEN -->
+
     <!-- NAV -->
     <nav
         class="navbar navbar-expand-md px-sm-custom-5 bg-white navbar-light fixed-top justify-content-between shadow-sm">
@@ -31,22 +41,25 @@
             <div class="collapse navbar-collapse justify-content-md-end" id="collapsibleNavbar">
                 <ul class="navbar-nav text-left vh-sm-100 justify-content-center align-items-md-center">
                     <li class="nav-item">
-                        <a class="nav-link mb-3 mb-md-0" href="#">Home</a>
+                        <a class="nav-link mb-3 mb-md-0" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mb-3 mb-md-0" href="#">About</a>
+                        <a class="nav-link mb-3 mb-md-0 d-none d-md-bock" href="#home-desktop">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mb-3 mb-md-0" href="#">Services</a>
+                        <a class="nav-link mb-3 mb-md-0" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mb-3 mb-md-0" href="#">Products</a>
+                        <a class="nav-link mb-3 mb-md-0" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mb-3 mb-md-0" href="#">Contact</a>
+                        <a class="nav-link mb-3 mb-md-0" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mb-3 mb-md-0" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item d-md-none">
-                        <a href="#" class="btn btn-primary btn-sm-block" role="button">GET STARTED</a>
+                        <a class="btn btn-primary btn-sm-block" role="button" href="#contact">GET STARTED</a>
                     </li>
                 </ul>
             </div>
@@ -57,13 +70,19 @@
     <!-- HOME -->
     <!-- MOBILE HERO -->
     <div class="jumbotron jumbotron-fluid mb-0 p-0 d-block d-md-none">
+        <span id="home" class="bookmark">
+            &nbsp;
+        </span>
         <div class="container p-0">
             <img src="images/hero-img-mobile.jpg" alt="woman holding cleaning products"
-                class="img-fluid d-block mx-auto mt-5">
+                class="img-fluid d-block mx-auto pt-5">
         </div>
     </div>
     <!--/ MOBILE HERO -->
     <main class="jumbotron jumbotron-fluid bg-white px-4 vh-md-100 d-flex align-items-center mb-0 hero mt-md-5">
+        <span id="home-desktop" class="bookmark">
+            &nbsp;
+        </span>
         <div class="container text-left">
             <div class="row text-md-left">
                 <div class="col-md-6 col-lg-6 col-xl-5">
@@ -74,7 +93,7 @@
                         Lio Chem Trading is a leading provider of cleaning products in the Philippines.
                     </h2>
                     <div class="mt-5">
-                        <a href="#" class="btn btn-sm-block btn-primary" role="button">LEARN MORE</a>
+                        <a href="#about" class="btn btn-sm-block btn-primary" role="button">LEARN MORE</a>
                     </div>
                 </div>
             </div>
@@ -94,169 +113,10 @@
 
     <!-- SERVICES -->
     <section class="container p-5 services">
+        <span id="services" class="bookmark">
+            &nbsp;
+        </span>
         <!-- MOBILE -->
-        <!-- <div class="d-lg-none">
-            <div class="row text-left">
-                <div class="col-12">
-                    <h3>
-                        Our Competencies
-                    </h3>
-                    <div class="card-deck mt-5">
-
-                    </div>
-                </div>
-            </div>
-            <div class="row no-gutters flex-row flex-nowrap scrolling-wrapper pb-4">
-                <div class="col-10 col-md-5">
-                    <div class="d-flex align-items-center">
-                        <img src="images/ware-washing-chemicals.jpg" alt="ware washing chemicals" width="72"
-                            class="rounded img-fluid">
-                        <p class="card-text ml-3">Ware washing Chemicals</p>
-                    </div>
-                </div>
-                <div class="col-10 col-md-5">
-                    <div class="d-flex align-items-center">
-                        <img src="images/housekeeping-chemicals.jpg" alt="ware washing chemicals" width="72"
-                            class="rounded img-fluid">
-                        <p class="card-text ml-3">Housekeeping Chemicals</p>
-                    </div>
-                </div>
-                <div class="col-10 col-md-5">
-                    <div class="d-flex align-items-center">
-                        <img src="images/cip.jpg" alt="ware washing chemicals" width="72" class="rounded img-fluid">
-                        <p class="card-text ml-3">CIP</p>
-                    </div>
-                </div>
-                <div class="col-10 col-md-5">
-                    <div class="d-flex align-items-center">
-                        <img src="images/foam-cleaning.jpg" alt="ware washing chemicals" width="72"
-                            class="rounded img-fluid">
-                        <p class="card-text ml-3">Foam Cleaning</p>
-                    </div>
-                </div>
-                <div class="col-10 col-md-5">
-                    <div class="d-flex align-items-center">
-                        <img src="images/ware-washing-chemicals.jpg" alt="ware washing chemicals" width="72"
-                            class="rounded img-fluid">
-                        <p class="card-text ml-3">Personal Hygiene</p>
-                    </div>
-                </div>
-                <div class="col-10 col-md-5">
-                    <div class="d-flex align-items-center">
-                        <img src="images/ware-washing-chemicals.jpg" alt="ware washing chemicals" width="72"
-                            class="rounded img-fluid">
-                        <p class="card-text ml-3">Household Products</p>
-                    </div>
-                </div>
-                <div class="col-10 col-md-5">
-                    <div class="d-flex align-items-center">
-                        <img src="images/ware-washing-chemicals.jpg" alt="ware washing chemicals" width="72"
-                            class="rounded img-fluid">
-                        <p class="card-text ml-3">Total Hygiene Management</p>
-                    </div>
-                </div>
-                <div class="col-10 col-md-5">
-                    <div class="d-flex align-items-center">
-                        <img src="images/ware-washing-chemicals.jpg" alt="ware washing chemicals" width="72"
-                            class="rounded img-fluid">
-                        <p class="card-text ml-3">Tray Washing</p>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
-        <!-- DESKTOP -->
-        <!-- <div class="d-none d-lg-block">
-            <div class="row text-left">
-                <div class="col-12">
-                    <h3>
-                        Our Competencies
-                    </h3>
-                    <div class="card-deck mt-5">
-                        <div class="card bg-white border-0">
-                            <div class="card-body text-left p-0">
-                                <div class="d-flex align-items-center">
-                                    <img src="images/ware-washing-chemicals.jpg" alt="ware washing chemicals" width="72"
-                                        class="rounded img-fluid">
-                                    <p class="card-text ml-3">Ware washing Chemicals</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card bg-white border-0">
-                            <div class="card-body text-left p-0">
-                                <div class="d-flex align-items-center">
-                                    <img src="images/housekeeping-chemicals.jpg" alt="ware washing chemicals" width="72"
-                                        class="rounded img-fluid">
-                                    <p class="card-text ml-3">Housekeeping Chemicals</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card bg-white border-0">
-                            <div class="card-body text-left p-0">
-                                <div class="d-flex align-items-center">
-                                    <img src="images/cip.jpg" alt="ware washing chemicals" width="72"
-                                        class="rounded img-fluid">
-                                    <p class="card-text ml-3">CIP</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card bg-white border-0">
-                            <div class="card-body text-left p-0">
-                                <div class="d-flex align-items-center">
-                                    <img src="images/foam-cleaning.jpg" alt="ware washing chemicals" width="72"
-                                        class="rounded img-fluid">
-                                    <p class="card-text ml-3">Foam Cleaning</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-12">
-                    <div class="card-deck">
-                        <div class="card bg-white border-0">
-                            <div class="card-body text-left p-0">
-                                <div class="d-flex align-items-center">
-                                    <img src="images/ware-washing-chemicals.jpg" alt="ware washing chemicals" width="72"
-                                        class="rounded img-fluid">
-                                    <p class="card-text ml-3">Personal Hygiene</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card bg-white border-0">
-                            <div class="card-body text-left p-0">
-                                <div class="d-flex align-items-center">
-                                    <img src="images/ware-washing-chemicals.jpg" alt="ware washing chemicals" width="72"
-                                        class="rounded img-fluid">
-                                    <p class="card-text ml-3">Household Products</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card bg-white border-0">
-                            <div class="card-body text-left p-0">
-                                <div class="d-flex align-items-center">
-                                    <img src="images/ware-washing-chemicals.jpg" alt="ware washing chemicals" width="72"
-                                        class="rounded img-fluid">
-                                    <p class="card-text ml-3">Total Hygiene Management</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card bg-white border-0">
-                            <div class="card-body text-left p-0">
-                                <div class="d-flex align-items-center">
-                                    <img src="images/ware-washing-chemicals.jpg" alt="ware washing chemicals" width="72"
-                                        class="rounded img-fluid">
-                                    <p class="card-text ml-3">Tray Washing</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
-        <!-- MOBILE V2 -->
         <div class="d-lg-none">
             <div class="row text-left">
                 <div class="col-12">
@@ -265,7 +125,7 @@
                     </h3>
                 </div>
             </div>
-            <div class="row no-gutters flex-row flex-nowrap scrolling-wrapper pb-4 mt-4">
+            <div class="row no-gutters flex-row flex-nowrap scrolling-wrapper pb-4 mt-4 slideanim">
                 <div class="col-10 col-md-5">
                     <img src="images/ware-washing-chemicals.jpg" alt="ware washing chemicals" width="243"
                         class="rounded img-fluid">
@@ -305,14 +165,14 @@
             </div>
         </div>
 
-        <!-- DEKSTOP V2 -->
+        <!-- DEKSTOP -->
         <div class="d-none d-lg-block">
             <div class="row text-left">
                 <div class="col-12">
                     <h3>
                         Our Competencies
                     </h3>
-                    <div class="card-deck mt-5">
+                    <div class="card-deck mt-5 slideanim">
                         <div class="card bg-white border-0">
                             <div class="card-body text-left p-0">
                                 <img src="images/ware-washing-chemicals.jpg" alt="ware washing chemicals" width="243"
@@ -346,7 +206,7 @@
             </div>
             <div class="row mt-3">
                 <div class="col-12">
-                    <div class="card-deck">
+                    <div class="card-deck slideanim">
                         <div class="card bg-white border-0">
                             <div class="card-body text-left p-0">
                                 <img src="images/personal-hygiene.jpg" alt="images/ware-washing-chemicals.jpg"
@@ -384,6 +244,9 @@
 
     <!-- ABOUT -->
     <section class="container-fluid bg-primary text-white p-5 about">
+        <span id="about" class="bookmark">
+            &nbsp;
+        </span>
         <div class="container p-0">
             <div class="row align-items-center">
                 <div class="col-md-6 order-md-2 pl-md-5">
@@ -391,7 +254,7 @@
                         Lio Chem Trading
                     </h3>
                     <img src="images/mixing-chemicals.jpg" alt="mixing chemicals"
-                        class="img-fluid d-block mx-auto rounded mt-5 mt-md-0 shadow d-md-none" width="345">
+                        class="img-fluid d-block mx-auto rounded mt-5 mt-md-0 shadow d-md-none slideanim" width="345">
                 </div>
                 <div class="col-md-7 order-md-1">
                     <h3 class="d-none d-md-block mt-2">
@@ -409,7 +272,7 @@
                         agencies,
                         as well as consumers.
                     </p>
-                    <a href="#" class="btn btn-sm-block btn-light my-5" role="button">GET IN TOUCH</a>
+                    <a href="#contact" class="btn btn-sm-block btn-light my-5" role="button">GET IN TOUCH</a>
                 </div>
             </div>
         </div>
@@ -418,6 +281,9 @@
 
     <!-- PRODUCTS -->
     <section class="container p-5 products">
+        <span id="products" class="bookmark">
+            &nbsp;
+        </span>
         <div class="row text-left">
             <div class="col-12">
                 <h3>
@@ -425,7 +291,7 @@
                 </h3>
             </div>
         </div>
-        <div class="row mt-5">
+        <div class="row mt-5 slideanim">
             <div class="col-12">
                 <div class="card-deck">
                     <div class="card">
@@ -510,6 +376,9 @@
 
     <!-- CONTACT -->
     <section class="container p-5 contact">
+        <span id="contact" class="bookmark">
+            &nbsp;
+        </span>
         <div class="row text-left">
             <div class="col-12">
                 <h3>
@@ -523,7 +392,7 @@
                 <p class="mt-5">
                     Please provide the necessary information below. We will get back to you in 24 hours.
                 </p>
-                <ul class="fa-ul mt-4">
+                <ul class="fa-ul mt-4 slideanim">
                     <li>
                         <a class="text-decoration-none text-body" target="_blank"
                             href="https://www.google.com/maps/dir/10.336618,123.9411606/@10.3365486,123.9410817,20.75z/data=!4m2!4m1!3e0">
@@ -574,7 +443,7 @@
                     Please provide the necessary information below. We will get back to you in 24 hours.
                 </p>
             </div>
-            <div class="col-6">
+            <div class="col-6 slideanim">
                 <ul class="fa-ul mt-4">
                     <li>
                         <a class="text-decoration-none text-body" target="_blank"
@@ -599,7 +468,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-6 pl-5">
+            <div class="col-6 pl-5 slideanim">
                 <ul class="fa-ul mt-4">
                     <li>
                         <p>
@@ -654,7 +523,12 @@
     <!--/ CONTACT -->
 
     <!-- GOOGLE MAPS -->
-    <div id="map"></div>
+    <!-- <div id="map"></div> -->
+
+    <a href="https://www.google.com/maps/dir/10.336618,123.9411606/@10.3365486,123.9410817,20.75z/data=!4m2!4m1!3e0"
+        title="Get directions on Google Maps" target="_blank">
+        <div class="map-static"></div>
+    </a>
     <!--/ GOOGLE MAPS -->
 
     <!-- LINKS -->
@@ -717,27 +591,27 @@
                     <ul class="nav flex-column mt-4">
                         <li class="nav-item">
                             <p>
-                                <a class="nav-link p-0" href="#">Home</a>
+                                <a class="nav-link p-0" href="#home">Home</a>
                             </p>
                         </li>
                         <li class="nav-item">
                             <p>
-                                <a class="nav-link p-0" href="#">About</a>
+                                <a class="nav-link p-0" href="#about">About</a>
                             </p>
                         </li>
                         <li class="nav-item">
                             <p>
-                                <a class="nav-link p-0" href="#">Services</a>
+                                <a class="nav-link p-0" href="#services">Services</a>
                             </p>
                         </li>
                         <li class="nav-item">
                             <p>
-                                <a class="nav-link p-0" href="#">Products</a>
+                                <a class="nav-link p-0" href="#products">Products</a>
                             </p>
                         </li>
                         <li class="nav-item">
                             <p>
-                                <a class="nav-link p-0" href="#">Contact</a>
+                                <a class="nav-link p-0" href="#contact">Contact</a>
                             </p>
                         </li>
                     </ul>
@@ -778,8 +652,8 @@
         </div>
     </footer>
 
-    <script>
-        // GOOGLE MAPS SCRIPT
+    <!-- GOOGLE MAPS SCRIPT -->
+    <!-- <script>
         function initMap() {
             var location = {
                 lat: 10.3366182,
@@ -794,11 +668,53 @@
                 map: map
             });
         }
-        // GOOGLE MAPS SCRIPT
-    </script>
+    </script> -->
     <!--GOOGLE MAPS API KEY-->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"></script>
-    <!--/GOOGLE MAPS API KEY-->
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"></script> -->
+    <!--/ GOOGLE MAPS SCRIPT -->
+
+    <!-- SMOOTH SCROLL SCRIPT -->
+    <script>
+        $(document).ready(function () {
+            $("a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 1000, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+    <!--/ SMOOTH SCROLL SCRIPT -->
+
+    <!-- LOADING SCREEN SCRIPT -->
+    <script>
+        $(document).ready(function () {
+            $('#loading-screen').fadeOut(300);
+        });
+    </script>
+    <!--/ LOADING SCREEN SCRIPT -->
+
+    <!-- ANIMATION SCRIPT -->
+    <script>
+        $(window).scroll(function () {
+            $(".slideanim").each(function () {
+                var pos = $(this).offset().top;
+
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("slide");
+                }
+            });
+        });
+    </script>
+    <!--/ ANIMATION SCRIPT -->
 </body>
 
 </html>
