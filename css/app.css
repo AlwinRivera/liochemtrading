@@ -27,6 +27,18 @@ body {
     border-color: #126487 !important;
 }
 
+/* BOOKMARKS */
+span.bookmark {
+    margin-top: -61.38px;
+    padding-bottom: 61.38px;
+    display: block;
+}
+
+/* LOADING SCREEN */
+#loading-screen {
+    z-index: 1032;
+}
+
 /* NAV */
 .navbar .nav-link {
     transition: color .3s;
@@ -124,9 +136,17 @@ h3 {
 }
 
 /* GOOGLE MAP */
-#map {
+#map,
+.map-static {
     height: 400px;
     width: 100%;
+}
+
+.map-static {
+    background-image: url("../images/map-img-mobile.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* LINKS */
@@ -153,6 +173,43 @@ footer {
 
 footer .nav-link {
     color: #222;
+}
+
+/* ANIMATION */
+.slideanim {
+    visibility: hidden;
+}
+
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -189,6 +246,12 @@ footer .nav-link {
 }
 
 @media only screen and (min-width: 768px) {
+
+    /* BOOKMARKS */
+    span.bookmark {
+        margin-top: -57.98px;
+        padding-bottom: 57.98px;
+    }
 
     /* NAV */
     .navbar .navbar-brand img {
@@ -273,9 +336,22 @@ footer .nav-link {
         font-size: 18px !important;
         font-weight: 300;
     }
+
+    .map-static {
+        background-image: url("../images/map-hero-img.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 @media only screen and (min-width: 992px) {
+
+    /* BOOKMARKS */
+    span.bookmark {
+        margin-top: -75.88px;
+        padding-bottom: 75.88px;
+    }
 
     /* NAV */
     .navbar .navbar-brand img {
