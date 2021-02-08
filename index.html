@@ -75,7 +75,7 @@
         </span>
         <div class="container p-0">
             <img src="images/hero-img-mobile.jpg" alt="woman holding cleaning products"
-                class="img-fluid d-block mx-auto pt-5">
+                class="img-fluid d-block mx-auto mobile-hero">
         </div>
     </div>
     <!--/ MOBILE HERO -->
@@ -715,6 +715,16 @@
         });
     </script>
     <!--/ ANIMATION SCRIPT -->
+
+    <!-- MOBILE NAVIGATION SCRIPT -->
+    <script>
+        $(document).ready(function () {
+            $('.navbar-nav>li>a').on('click', function () {
+                $('.navbar-collapse').collapse('hide');
+            });
+        });
+    </script>
+    <!--/ MOBILE NAVIGATION SCRIPT -->
 </body>
 
 </html>
