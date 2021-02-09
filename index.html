@@ -31,7 +31,7 @@
     <nav
         class="navbar navbar-expand-md px-sm-custom-5 bg-white navbar-light fixed-top justify-content-between shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand bookmark-link" href="#home">
                 <img src="images/logo.png" alt="lio chem trading" width="110" class="img-fluid">
             </a>
             <button class="navbar-toggler border-0" type="button" data-toggle="collapse"
@@ -41,25 +41,26 @@
             <div class="collapse navbar-collapse justify-content-md-end" id="collapsibleNavbar">
                 <ul class="navbar-nav text-left vh-sm-100 justify-content-center align-items-md-center">
                     <li class="nav-item">
-                        <a class="nav-link mb-3 mb-md-0" href="#home">Home</a>
+                        <a class="nav-link mb-3 mb-md-0 bookmark-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mb-3 mb-md-0 d-none d-md-bock" href="#home-desktop">Home</a>
+                        <a class="nav-link mb-3 mb-md-0 d-none d-md-bock bookmark-link" href="#home-desktop">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mb-3 mb-md-0" href="#about">About</a>
+                        <a class="nav-link mb-3 mb-md-0 bookmark-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mb-3 mb-md-0" href="#services">Services</a>
+                        <a class="nav-link mb-3 mb-md-0 bookmark-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mb-3 mb-md-0" href="#products">Products</a>
+                        <a class="nav-link mb-3 mb-md-0 bookmark-link" href="#products">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mb-3 mb-md-0" href="#contact">Contact</a>
+                        <a class="nav-link mb-3 mb-md-0 bookmark-link" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item d-md-none">
-                        <a class="btn btn-primary btn-sm-block" role="button" href="#contact">GET STARTED</a>
+                        <a class="btn btn-primary btn-sm-block bookmark-link" role="button" href="#contact">GET
+                            STARTED</a>
                     </li>
                 </ul>
             </div>
@@ -93,7 +94,7 @@
                         Lio Chem Trading is a leading provider of cleaning products in the Philippines.
                     </h2>
                     <div class="mt-5">
-                        <a href="#about" class="btn btn-sm-block btn-primary" role="button">LEARN MORE</a>
+                        <a href="#about" class="btn btn-sm-block btn-primary bookmark-link" role="button">LEARN MORE</a>
                     </div>
                 </div>
             </div>
@@ -272,7 +273,8 @@
                         agencies,
                         as well as consumers.
                     </p>
-                    <a href="#contact" class="btn btn-sm-block btn-light my-5" role="button">GET IN TOUCH</a>
+                    <a href="#contact" class="btn btn-sm-block btn-light my-5 bookmark-link" role="button">GET IN
+                        TOUCH</a>
                 </div>
             </div>
         </div>
@@ -295,14 +297,52 @@
             <div class="col-12">
                 <div class="card-deck">
                     <div class="card">
-                        <img class="card-img-top" src="images/lioclean.jpg" alt="general cleaners and sanitizers"
-                            class="img-fluid" width="348">
+                        <div id="products1" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="card-img-top" src="images/lioclean.jpg"
+                                        alt="general cleaners and sanitizers" class="img-fluid" width="348">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="card-img-top" src="images/kleencide.jpg"
+                                        alt="general cleaners and sanitizers" class="img-fluid" width="348">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="card-img-top" src="images/lioclean.jpg"
+                                        alt="general cleaners and sanitizers" class="img-fluid" width="348">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="card-img-top" src="images/quatcide.jpg"
+                                        alt="general cleaners and sanitizers" class="img-fluid" width="348">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="card-img-top" src="images/chlorcide-small.jpg"
+                                        alt="general cleaners and sanitizers" class="img-fluid" width="348">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="card-img-top" src="images/lioclean.jpg"
+                                        alt="general cleaners and sanitizers" class="img-fluid" width="348">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#products1" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#products1" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+
                         <div class="card-footer">
                             <h4>
                                 General Cleaners & Sanitizers
                             </h4>
                             <p class="mt-3">
-                                LIOCLEAN | KLEENCIDE | AKTIVE KLEEN + | QUATCIDE | CHLORCIDE | PA KLEEN
+                                <span data-target="#products1" data-slide-to="0">LIOCLEAN</span> |
+                                <span data-target="#products1" data-slide-to="1">KLEENCIDE</span> |
+                                <span data-target="#products1" data-slide-to="2">AKTIVE KLEEN +</span> |
+                                <span data-target="#products1" data-slide-to="3">QUATCIDE</span> |
+                                <span data-target="#products1" data-slide-to="4">CHLORCIDE</span> |
+                                <span data-target="#products1" data-slide-to="5">PA KLEEN</span>
                             </p>
                         </div>
                     </div>
@@ -314,57 +354,152 @@
                                 Advance Disinfectant
                             </h4>
                             <p>
-                                SANOSIL S003
+                                <span>
+                                    SANOSIL S003
+                                </span>
                             </p>
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top" src="images/foamsan.jpg" alt="general cleaners and sanitizers"
-                            class="img-fluid" width="348">
+                        <div id="products2" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="card-img-top" src="images/foamsan.jpg"
+                                        alt="general cleaners and sanitizers" class="img-fluid" width="348">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="card-img-top" src="images/acid-foam.jpg"
+                                        alt="general cleaners and sanitizers" class="img-fluid" width="348">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="card-img-top" src="images/foamsan.jpg"
+                                        alt="general cleaners and sanitizers" class="img-fluid" width="348">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#products2" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#products2" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
                         <div class="card-footer">
                             <h4>
                                 Advance Cleaner
                             </h4>
                             <p>
-                                FOAMSAN | ACID FOAM | ALFOAM
+                                <span data-target="#products2" data-slide-to="0">FOAMSAN</span> |
+                                <span data-target="#products2" data-slide-to="1">ACID FOAM</span> |
+                                <span data-target="#products2" data-slide-to="2">ALFOAM</span>
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="card-deck mt-3">
                     <div class="card">
-                        <img class="card-img-top" src="images/lcs.jpg" alt="general cleaners and sanitizers"
-                            class="img-fluid" width="348">
+                        <div id="products3" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="card-img-top" src="images/lcs.jpg" alt="general cleaners and sanitizers"
+                                        class="img-fluid" width="348">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="card-img-top" src="images/aktive-lwa.jpg"
+                                        alt="general cleaners and sanitizers" class="img-fluid" width="348">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="card-img-top" src="images/aktive-cip.jpg"
+                                        alt="general cleaners and sanitizers" class="img-fluid" width="348">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="card-img-top" src="images/lcs.jpg" alt="general cleaners and sanitizers"
+                                        class="img-fluid" width="348">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#products3" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#products3" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
                         <div class="card-footer">
                             <h4>
                                 CIP Cleaner
                             </h4>
                             <p>
-                                LCS | AKTIVE LWA | AKTIVE CIP | ATIVE PLUS
+                                <span data-target="#products3" data-slide-to="0">LCS</span> |
+                                <span data-target="#products3" data-slide-to="1">AKTIVE LWA</span> |
+                                <span data-target="#products3" data-slide-to="2">AKTIVE CIP</span> |
+                                <span data-target="#products3" data-slide-to="3">AKTIVE PLUS</span>
                             </p>
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top" src="images/pure-clean.jpg" alt="general cleaners and sanitizers"
-                            class="img-fluid" width="348">
+                        <div id="products4" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="card-img-top" src="images/pure-clean.jpg"
+                                        alt="general cleaners and sanitizers" class="img-fluid" width="348">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="card-img-top" src="images/pure-clean-gel.jpg"
+                                        alt="general cleaners and sanitizers" class="img-fluid" width="348">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#products4" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#products4" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
                         <div class="card-footer">
                             <h4>
                                 Hand Hygiene
                             </h4>
                             <p>
-                                PURECLEAN | PURECLEAN GEL
+                                <span data-target="#products4" data-slide-to="0">PURECLEAN</span> |
+                                <span data-target="#products4" data-slide-to="1">PURECLEAN GEL</span>
                             </p>
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top" src="images/clean.jpg" alt="general cleaners and sanitizers"
-                            class="img-fluid" width="348">
+                        <div id="products5" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="card-img-top" src="images/clean.jpg"
+                                        alt="general cleaners and sanitizers" class="img-fluid" width="348">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="card-img-top" src="images/max-laundry.jpg"
+                                        alt="general cleaners and sanitizers" class="img-fluid" width="348">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="card-img-top" src="images/clean.jpg"
+                                        alt="general cleaners and sanitizers" class="img-fluid" width="348">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="card-img-top" src="images/clean.jpg"
+                                        alt="general cleaners and sanitizers" class="img-fluid" width="348">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#products5" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#products5" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
                         <div class="card-footer">
                             <h4>
                                 Housekeeping
                             </h4>
                             <p>
-                                CLEAN | MAX LAUNDRY | LUX LAUNDRY | JEN FABCON
+                                <span data-target="#products5" data-slide-to="0">CLEAN</span> |
+                                <span data-target="#products5" data-slide-to="1">MAX LAUNDRY</span> |
+                                <span data-target="#products5" data-slide-to="2">LUX LAUNDRY</span> |
+                                <span data-target="#products5" data-slide-to="3">JEN FABCON</span> |
                             </p>
                         </div>
                     </div>
@@ -591,27 +726,27 @@
                     <ul class="nav flex-column mt-4">
                         <li class="nav-item">
                             <p>
-                                <a class="nav-link p-0" href="#home">Home</a>
+                                <a class="nav-link p-0 bookmark-link" href="#home">Home</a>
                             </p>
                         </li>
                         <li class="nav-item">
                             <p>
-                                <a class="nav-link p-0" href="#about">About</a>
+                                <a class="nav-link p-0 bookmark-link" href="#about">About</a>
                             </p>
                         </li>
                         <li class="nav-item">
                             <p>
-                                <a class="nav-link p-0" href="#services">Services</a>
+                                <a class="nav-link p-0 bookmark-link" href="#services">Services</a>
                             </p>
                         </li>
                         <li class="nav-item">
                             <p>
-                                <a class="nav-link p-0" href="#products">Products</a>
+                                <a class="nav-link p-0 bookmark-link" href="#products">Products</a>
                             </p>
                         </li>
                         <li class="nav-item">
                             <p>
-                                <a class="nav-link p-0" href="#contact">Contact</a>
+                                <a class="nav-link p-0 bookmark-link" href="#contact">Contact</a>
                             </p>
                         </li>
                     </ul>
@@ -676,7 +811,7 @@
     <!-- SMOOTH SCROLL SCRIPT -->
     <script>
         $(document).ready(function () {
-            $("a").on('click', function (event) {
+            $("a.bookmark-link").on('click', function (event) {
                 if (this.hash !== "") {
                     event.preventDefault();
 
