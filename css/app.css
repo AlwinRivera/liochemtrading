@@ -111,6 +111,15 @@ h3 {
     color: #222;
     transition: all .3s;
     background-color: #fff;
+    cursor: pointer;
+}
+
+.products .card-footer span {
+    transition: opacity .3s;
+}
+
+.products .card-footer span:hover {
+    opacity: .5;
 }
 
 .products .card:hover .card-footer {
@@ -145,6 +154,10 @@ h3 {
 .map-static {
     height: 400px;
     width: 100%;
+}
+
+#map>div:nth-child(2)[style] {
+    display: none !important;
 }
 
 .map-static {
