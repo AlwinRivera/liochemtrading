@@ -107,6 +107,10 @@ h3 {
     font-weight: 600;
 }
 
+.products img {
+    cursor: pointer;
+}
+
 .products .card-footer {
     color: #222;
     transition: all .3s;
